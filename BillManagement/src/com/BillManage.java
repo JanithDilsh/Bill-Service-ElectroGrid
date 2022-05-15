@@ -68,7 +68,7 @@ public class BillManage {
 				return "Error while connecting to the database for reading.";
 			}
 			// Prepare the html table to be displayed
-			output = "<table border=\"1\"><tr><th>Customer Name</th><th>Bill ID</th><th>Card No</th><th>CCV</th><th>Expired Date</th><th>Update</th><th>Remove</th></tr>";
+			output = "<table border='1'><tr><th>Customer Name</th><th>Bill ID</th><th>Card No</th><th>CCV</th><th>Expired Date</th><th>Update</th><th>Remove</th></tr>";
 			String query = "select * from bill";
 			Statement stmt = (Statement) con.createStatement();
 			ResultSet rs = ((java.sql.Statement) stmt).executeQuery(query);
